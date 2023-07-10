@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #302f44, #000000);
+}
+
+.wrapper {
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+.wrapper .form .inputBox {
+  display: flex;
+}
+
+.wrapper .form .inputBox input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.wrapper .form .inputBox input[type="text"]:focus {
+  border-color: #9b59b6;
+}
+
+.wrapper .form .inputBox button {
+  background: #9b59b6;
+  min-width: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+}
+
+.buttons-task {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task-done{
+  font-style: italic;
+  background: #86ec7e;
+}
+
+.task-false {
+  background: #eee;
+}
+
+.wrapper .form .inputBox button:hover {
+  background: #8e44ad;
+}
+
+.wrapper #data {
+  list-style: none;
+}
+
+.wrapper #data li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  
+}
+
+.wrapper #data li p {
+  padding: 0 10px;
+}
+
+.delete-btn{
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  min-width: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.done-btn{
+  background: #2aab20;
+  color: white;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  min-width: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.done-btn:hover {
+  background: #2d8726;
+}
+
+.wrapper .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .footer button {
+  background: #e74c3c;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.wrapper .footer button:hover {
+  background: #c0392b;
+}
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 80%;
+    margin: 20px auto;
+  }
+ 
+}
+
+@media only screen and (max-width: 320px) {
+  .wrapper .form .inputBox input[type="text"] {
+  width: 50%;
+  }
+
+}
+
+/* Modal */
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  text-align: center;
+}
+
+#close {
+  border-radius: 0.3rem;
+  transform: translateY(-50%);
+  height: 100%;
+  background: #9b59b6;
+  min-width: 100px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.modal_null {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  text-align: center;
+}
+
+.modal_success {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  text-align: center;
